@@ -1,0 +1,16 @@
+<% if current_user %>
+
+<%= render '/users/main' %>
+
+<% else %>
+
+<h1>Welcome to World Wide Kid</h1>
+<p>If you're a parent of a young child, this website will become your best buddy!</p>
+
+<p>No more struggling to find your kids favorite websites or having them play games when it's time to study.</p>
+
+<p>New to WWK?  Create an account <a href="/users/new">here</a> to get started</p>
+
+<p>Already a WWF User?  <a href="/login">Login here</a></p>
+
+<% end %>

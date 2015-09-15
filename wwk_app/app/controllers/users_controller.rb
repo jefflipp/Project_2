@@ -1,11 +1,18 @@
 class UsersController < ApplicationController
 
-def index
+	def index
     @users = User.all
   end
 
-def new
+	def new
     @user = User.new
+  end
+
+  def show
+    @kids = Kid.where user_id: current_user.id
+  end
+
+  def edit
   end
 
   def create
