@@ -5,6 +5,7 @@ class KidsController < ApplicationController
 	end
 
 	def show
+    @kid = Kid.find(params[:id])
   end
 
   def new

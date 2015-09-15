@@ -3,8 +3,10 @@ Rails.application.routes.draw do
   root 'welcome#index'
 
   resources :users do
-    resources :kids 
+    resources :kids do
+      resources :categories 
 
+    end
   end
 
   get "/login"     => "sessions#new"
