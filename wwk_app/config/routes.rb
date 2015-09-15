@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-root 'users#index'
+  root 'welcome#index'
 
   resources :users do
     resources :kids 
