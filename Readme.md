@@ -35,20 +35,11 @@ A kid page will have a smaller view of all of the allowable websites that are in
 #### Models Diagram 
 ![image](images/rails models.jpg)
 
-#### Models Relationships:  
-* User has many kids  
-* User has many categories through kids  
-* Kid belongs to User  
-* Kid has many categories  
-* Category has many websites  
-* Kid has many website through categories
-
 #### Models Details:
 
 Users (Parents): name, email, password  
-Kids: name, gender, age:integer, user:references   
-Categories: name, kids:references, user: reference  
-Websites: url:string, user:references, kids:references, categories:references
+Kids: name, gender, age:integer, user:references    
+Websites: name url:text kid:references
 
 ### Steps to build
 
@@ -62,6 +53,17 @@ Websites: url:string, user:references, kids:references, categories:references
 * Style pages with bootstrap
 * Look for partial cleanups
 * Look at upgrade features
+* Clean up readme and make website linkable at guthub project page
+
+### Wednesday 
+
+* Get add and showing websites to fully work 
+* Organize flow with links
+* Create child viewing pages with iframe 
+* config.action_dispatch.default_headers = {
+    'X-Frame-Options' => 'ALLOWALL'
+}
+* Styling
 
 ### Pages Needed
 
