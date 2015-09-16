@@ -5,12 +5,14 @@ def index
 	end
 
 	def show
+    @user = User.find(params[:id])
+    @kid = Kid.find(params[:id])
     @website = Website.find(params[:id])
   end
 
   def new
   	@user = current_user.id
-  	@website = Website.new
+  	@website = Website.new(kid_id: params[:kid_id])
     @kid = Kid.find(params[:kid_id])
   end
 
@@ -20,12 +22,11 @@ def index
   def create
     @user = current_user.id
     @kid = Kid.find(params[:kid_id])
-    #@website = @kid.websites.new(website_params)
     @website = Website.new(website_params)
   	@website.kid_id = params[:kid_id].to_i
 
     if @website.save
-				redirect_to user_kid_websites_path
+				redirect_to user_kid_path( current_user.id, @kid )
 		else
 			render :new
     end

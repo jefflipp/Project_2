@@ -1,8 +1,11 @@
 <h1>Kid Info</h1>
+<%= @kid.name %>
+<br><br>
+	<% @kid.websites.each do |website| %>
+	<a href="http://<%= website.url %>"><%= website.name %></a>
+	<iframe class="box1" width="500" height="320" src="http://<%= website.url %>"></iframe>
+	<br>
+	<% end %>
 
-<ul>
-	<li>
-		<%= @kid.name %>
-		<%= @kid.age %>
-	</li>
-</ul>
+<%# raise @kid.inspect %>
+<%= link_to "Add a Website", new_user_kid_website_path(current_user, @kid) %>
