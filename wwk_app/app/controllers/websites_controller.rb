@@ -20,12 +20,11 @@ def index
   def create
     @user = current_user.id
     @kid = Kid.find(params[:kid_id])
-    #@website = @kid.websites.new(website_params)
     @website = Website.new(website_params)
   	@website.kid_id = params[:kid_id].to_i
 
     if @website.save
-				redirect_to user_kid_websites_path
+				redirect_to user_kid_website_path
 		else
 			render :new
     end

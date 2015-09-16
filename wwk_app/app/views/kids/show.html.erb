@@ -1,8 +1,12 @@
 <h1>Kid Info</h1>
-
+<%= @kid.name %>
 <ul>
+	<% @kid.websites.each do |website| %>
 	<li>
-		<%= @kid.name %>
-		<%= @kid.age %>
+	<%= website.name %>
 	</li>
+	<li>
+	<%= website.url %>
+	</li>
+	<% end %>
 </ul>

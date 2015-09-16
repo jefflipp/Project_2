@@ -8,3 +8,7 @@
 
 User.create(name: "Greg", email: "greg@greg.com", password: "greg", password_confirmation: "greg")
 Kid.create(name: "Kim", age: 4, user_id: 1)
+Website.create(name: "google", url: "www.google.com", kid_id: 1)
+Website.create(name: "yahoo", url: "www.yahoo.com", kid_id: 1)
+Website.create(name: "artkive", url: "www.artkiveapp.com", kid_id: 1)
+
