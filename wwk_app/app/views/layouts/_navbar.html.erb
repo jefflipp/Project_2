@@ -15,21 +15,13 @@
    <!-- Collect the nav links, forms, and other content for toggling -->
    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
      <ul class="nav navbar-nav">
-       <li class="active"><a href=>My Profile </a></li>
+       <li><%= link_to 'WWK Users', users_path(current_user) %></li>
        <% if current_user %>
        <li><%= link_to 'Add a Child', new_user_kid_path(current_user) %></li>
-       <% end %>
-       <li class="dropdown">
-         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Websites <span class="caret"></span></a>
-         <ul class="dropdown-menu">
-           <li><a href="/Websites">All Websites</a></li>
-           <li><a href="#">Websites by Category</a></li>
-           <li><a href="#">Websites by Child</a></li>
-           <li role="separator" class="divider"></li>
-           <li><a href="#">Comments</a></li>
-           <li role="separator" class="divider"></li>
-           <li><a href="#">Likes</a></li>
+       
+       <li><%= link_to 'Create a Page', users_path(current_user) %></li>
          </ul>
+         <% end %>
        </li>
      </ul>
      

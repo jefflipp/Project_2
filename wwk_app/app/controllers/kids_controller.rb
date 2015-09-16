@@ -2,9 +2,12 @@ class KidsController < ApplicationController
 
 	def index
 		@kids = Kid.where user_id: current_user.id
+    @user = User.find(current_user.id)
 	end
 
 	def show
+    @kid = Kid.find(params[:id])
+    @website = Website.find(params[:id])
   end
 
   def new

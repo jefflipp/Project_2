@@ -1,3 +1,3 @@
 class Website < ActiveRecord::Base
-  belongs_to :category
+  belongs_to :kid
 end
