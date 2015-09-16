@@ -4,8 +4,8 @@ Rails.application.routes.draw do
 
   resources :users do
     resources :kids do
-      resources :categories 
-
+      resources :websites 
+       
     end
   end
 

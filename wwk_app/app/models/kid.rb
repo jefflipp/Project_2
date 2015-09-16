@@ -1,4 +1,4 @@
 class Kid < ActiveRecord::Base
   belongs_to :user
-  has_many :categories
+  has_many :websites
 end
