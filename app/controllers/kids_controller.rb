@@ -7,7 +7,7 @@ class KidsController < ApplicationController
 
 	def show
     @kid = Kid.find(params[:id])
-    @website = Website.find(params[:id])
+    #@websites = Website.where({ kid_id: params[:id] })
   end
 
   def new
