@@ -2,17 +2,24 @@
 
 <h3>New Website</h1>
 
-<%= form_for ([:user, :kid, @website]) do |f| %>
 
-  <div>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-  </div>
-  <div>
-    <%= f.label :url %>
-    <%= f.text_field :url %>
-  </div>
-  <div>
-    <%= f.submit %>
-  </div>
-<% end %>
+
+<div class="row">
+      <div class="col-sm-4 text-center">
+        <h2>Type it in & Tee it up</h2>
+        <%= form_for ([:user, :kid, @website]) do |f| %>
+          <ul>
+            <li><%= f.label :name %></li>
+            <li><%= f.text_field :name %></li>
+          </ul>
+          
+          <ul>
+            <li><%= f.label :url %></li>
+            <li><%= f.text_field :url %></li>
+          </ul>
+          <ul>
+            <li><%= f.submit %></li>
+          </ul>
+        <% end %>
+      </div>
+</div>

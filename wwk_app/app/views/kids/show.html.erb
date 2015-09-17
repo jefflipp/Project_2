@@ -1,13 +1,17 @@
-<h1>Kid Info</h1>
-<%= @kid.name %>
+<h1><%= @kid.name %>'s Websites</h1>
 <br><br>
-	<div class="websites">
-		<% @kid.websites.each do |website| %>
-			<a href="http://<%= website.url %>" class="launch"><%= website.name %></a>
-			<iframe class="box1" width="500" height="320" src="http://<%= website.url %>"></iframe>
-			<br>
-		<% end %>
+	<div class="row">
+		<div class="col-sm-6">
+			<% @kid.websites.each do |website| %>
+				<a href="http://<%= website.url %>" class="launch"><%= website.name %></a>
+				<iframe class="box1" width="500" height="320" src="http://<%= website.url %>"></iframe>
+				<br>
+			<% end %>
+		<br>
+		</div>
 	</div>
 
 <%# raise @kid.inspect %>
-<%= link_to "Add a Website", new_user_kid_website_path(current_user, @kid) %>
+<div class="col-sm-3">
+	<h2><%= link_to "Add a Website", new_user_kid_website_path(current_user, @kid) %></h2>
+</div>

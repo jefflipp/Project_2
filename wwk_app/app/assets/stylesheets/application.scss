@@ -19,6 +19,14 @@
 
 /* general */
 
+h1 {
+	text-align: center;
+}
+
+.logo {
+	position: center;
+}
+
 .navbar-default {
 	background: rgba(0,0,0,.9);
 }
@@ -33,4 +41,42 @@ ul {
 
 .navbar-nav {
 	color: white;
+}
+
+.boss {
+	color: #9900CC;
+
+}
+
+.col-sm-4 {
+	background-color: #CC80E6;
+	border-radius: 10%;
+	padding: 10px;
+	margin: 10px 0 0 0;
+}
+
+.outline {
+	border: 2px solid black;
+}
+
+.launch {
+	font-size: 26px;
+
+}
+.col-sm-7 {
+	background-color: #CC80E6;
+	border-radius: 10%;
+}
+
+.create {
+	color: black;
+}
+
+.col-sm-5 {
+	margin-top: 20px;
+}
+
+.col-sm-12 {
+	background-color: #CCFFCC;
+	border-radius: 10%;
 }

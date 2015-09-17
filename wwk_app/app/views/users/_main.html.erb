@@ -1,7 +1,9 @@
 <h1>My WWK Personal Page</h1>
 
        <% if current_user %>
-           <h2>Account Owner:  <%= current_user.name %></h2>
+       <div class="boss">    
+           <h2>Who's the boss?  <%= current_user.name %> is, oh yeah</h2>
+       </div>
        <% else %>
          <%= link_to 'Log In', login_path %> 
        

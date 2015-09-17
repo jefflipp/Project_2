@@ -1,16 +1,19 @@
   <h2>Add a Child to your WWK Profile</h1>
 
 <h3>New Child Info</h1>
-<%= form_for ([@user, @user.kids.new]) do |f| %>
-  <div>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-  </div>
-  <div>
-    <%= f.label :age %>
-    <%= f.text_field :age %>
-  </div>
-  <div>
-    <%= f.submit %>
-  </div>
-<% end %>
+<br>
+<div class="col-sm-4 text-center">
+    <%= form_for ([@user, @user.kids.new]) do |f| %>
+        <ul>
+            <li><%= f.label :name %>
+                <%= f.text_field :name %>
+            </li>
+        </ul>
+        <ul>
+            <li><%= f.label :age %>
+                <%= f.text_field :age %></li>
+        </ul>
+        <ul>
+            <li><%= f.submit %></li>
+        </ul>
+    <% end %>

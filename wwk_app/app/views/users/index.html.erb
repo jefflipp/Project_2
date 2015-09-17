@@ -1,10 +1,20 @@
-<h1>See who's using WWF...You don't want to be left out</h1>
+<h1>See who's using WWK...You don't want to be left out</h1>
+<hr />
 
-<ul>
-<% @users.each do |user| %>
-	<li>
-		<%= user.name %>
-	</li>
 
-<% end %>
-</ul>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.name %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
