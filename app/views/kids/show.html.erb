@@ -1,23 +1,27 @@
 <h1><%= @kid.name %>'s Websites</h1>
 <br><br>
 	<div class="row">
-		<div class="col-sm-6">
+		
 			<% @kid.websites.each do |website| %>
-				<div class="top">
+				<div class="col-sm-6">
 					<a href="http://<%= website.url %>" class="launch"><%= website.name %></a>
-						</div>
+						
+				<div class="iframeWrapper">	
 					<iframe class="box1" width="500" height="320" src="http://<%= website.url %>"></iframe>
-					<br><br>
-					<h3><%= link_to 'Delete Site', user_kid_website_path(@kid.user, @kid,  website),
-              method: :delete,
+				</div>
+					<br>
+					<h3><%= link_to '', user_kid_website_path(@kid.user, @kid,  website),
+              method: :delete, :class => 'glyphicon glyphicon-trash',
               data: { confirm: 'Are you sure?' } %></h3>
 					<br>
+				</div>
 			<% end %>
 			<br>
-		</div>
+		
 	</div>
 
 <%# raise @kid.inspect %>
-<div class="col-sm-3">
-	<h2><%= link_to "Add a Website", new_user_kid_website_path(current_user, @kid) %></h2>
+<div class="addWebsite col-sm-3">
+			<h2 class="websiteBox"><%= link_to "Add a Website", new_user_kid_website_path(current_user, @kid) %></h2>
+		</div>	
 </div>
