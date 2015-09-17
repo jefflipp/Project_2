@@ -16,3 +16,21 @@
  
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+/* general */
+
+.navbar-default {
+	background: rgba(0,0,0,.9);
+}
+
+.logo {
+	margin: 0 auto;
+}
+
+ul {
+	list-style: none;
+}
+
+.navbar-nav {
+	color: white;
+}

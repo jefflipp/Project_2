@@ -14,3 +14,26 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+// var launch = $('.launch')[0];
+
+// //launches fullcreen cross browser
+// function launchIntoFullscreen(element) {
+//   if(element.requestFullscreen) {
+//     element.requestFullscreen();
+//   } else if(element.mozRequestFullScreen) {
+//     element.mozRequestFullScreen();
+//   } else if(element.webkitRequestFullscreen) {
+//     element.webkitRequestFullscreen();
+//   }
+// }
+
+// //hides game when exiting fullscreen
+// $(document).bind('webkitfullscreenchange mozfullscreenchange fullscreenchange', function(e) {
+//     var state = document.fullScreen || document.mozFullScreen || document.webkitIsFullScreen;
+//     var e = state ? 0 : 1 ;
+//     if (e === 1){
+//       location.reload();
+//         $(launch).hide();  
+//     }
+// });

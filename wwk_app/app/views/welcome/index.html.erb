@@ -1,16 +1,28 @@
-<% if current_user %>
-
-<%= render '/users/main' %>
-
-<% else %>
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
 
 <h1>Welcome to World Wide Kid</h1>
-<p>If you're a parent of a young child, this website will become your best buddy!</p>
+	<hr />
 
-<p>No more struggling to find your kids favorite websites or having them play games when it's time to study.</p>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<%= image_tag "girl_surfing_net.jpg", class: "img-responsive" %>
+				</div>
+				<div class="col-sm-6 text-center">
+					<h2>Does this look familiar?</h2>
+					<h4>
+						Then this is the website for you.  Never again scramble for that website address that's in that LONG list of bookmarks on your desktop computer!
+					</h4>
+					<h3>Create an account <a href="/users/new">here</a> to get started.</h3>
 
-<p>New to WWK?  Create an account <a href="/users/new">here</a> to get started</p>
+					<h3>Already a WWF User?  <a href="/login">Login here</a></h3>
+				</div>
+			</div>
 
-<p>Already a WWF User?  <a href="/login">Login here</a></p>
 
-<% end %>
+
+
+</body>
+</html>

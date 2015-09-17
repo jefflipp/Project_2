@@ -1,14 +1,21 @@
-<h1>Log In</h1>
-<%= form_for :login do |f| %>
-  <div>
-    <%= f.label :email %>
-    <%= f.text_field :email %>
-  </div>
-  <div>
-    <%= f.label :password %>
-    <%= f.password_field :password %>
-  </div><br>
-  <div>
-    <%= f.submit 'Log In' %>
-  </div>
-<% end %>
+
+<div class="rowsession">
+      <div class="login text-center">
+        <h2>Enter the WWK Zone</h2>
+          <%= form_for :login do |f| %>
+          <ul>
+            <li><%= f.label :email %></li>
+            <li><%= f.text_field :email %></li>
+          </ul>
+          
+          <ul>
+            <li><%= f.label :password %></li>
+            <li><%= f.password_field :password %></li>
+          </ul>
+
+          <ul class="create">
+            <li><%= f.submit 'log In' %></li>
+          </ul>
+        <% end %>
+      </div>
+    </div>
