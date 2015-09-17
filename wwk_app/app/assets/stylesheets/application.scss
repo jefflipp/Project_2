@@ -50,9 +50,8 @@ ul {
 
 .col-sm-4 {
 	background-color: #CC80E6;
-	border-radius: 10%;
-	padding: 10px;
-	margin: 10px 0 0 0;
+	border-radius: 5%;
+	padding: 10px 0 0 0;
 }
 
 .outline {
@@ -79,4 +78,12 @@ ul {
 .col-sm-12 {
 	background-color: #CCFFCC;
 	border-radius: 10%;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: white;
+}
+
+.navbar-default .navbar-brand {
+	color: white;	
 }

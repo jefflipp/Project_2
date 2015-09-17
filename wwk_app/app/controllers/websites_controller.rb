@@ -32,6 +32,14 @@ def index
     end
   end
 
+  def destroy
+    @user = current_user.id
+    @kid = Kid.find(params[:kid_id])
+    @website = Website.find(params[:id])
+    @website.destroy
+    redirect_to user_kid_path(@user, @kid) 
+  end
+
   
   private
     def website_params

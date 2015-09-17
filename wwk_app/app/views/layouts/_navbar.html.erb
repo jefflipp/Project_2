@@ -18,6 +18,7 @@
        <li><%= link_to 'WWK Users', users_path(current_user) %></li>
        <% if current_user %>
        <li><%= link_to 'Add a Child', new_user_kid_path(current_user) %></li>
+       <li><%= link_to 'My Kids', user_path(current_user) %></li>
          </ul>
          <% end %>
        </li>

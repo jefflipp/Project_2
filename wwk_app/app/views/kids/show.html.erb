@@ -3,11 +3,17 @@
 	<div class="row">
 		<div class="col-sm-6">
 			<% @kid.websites.each do |website| %>
-				<a href="http://<%= website.url %>" class="launch"><%= website.name %></a>
-				<iframe class="box1" width="500" height="320" src="http://<%= website.url %>"></iframe>
-				<br>
+				<div class="top">
+					<a href="http://<%= website.url %>" class="launch"><%= website.name %></a>
+						</div>
+					<iframe class="box1" width="500" height="320" src="http://<%= website.url %>"></iframe>
+					<br><br>
+					<h3><%= link_to 'Delete Site', user_kid_website_path(@kid.user, @kid,  website),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></h3>
+					<br>
 			<% end %>
-		<br>
+			<br>
 		</div>
 	</div>
 
