@@ -1,4 +1,6 @@
 ##Project 2 - World Wide Kid
+### Deployed site: https://worldwidekid.herokuapp.com/ 
+
 World Wide Kid (WWK) a website that enables parents with kids ages 2-10 to manage and support their children's web activity across any device and location.  Parents of young children face the problem of forgetting what wesbites are useful or fun (yet appropriate for their children).
 
 Parents endlessly bookmark websites for their children but bookmark management is never a priority so a browser ends up with a surplus of websites in a single list that hold different websites targeted for multiple children in their family.
