@@ -53,6 +53,8 @@ Websites: name url:text kid:references user:references
 * Top websites 
 * Sponsored links from which to choose
 
+Making a pull request
+
 
 
 
